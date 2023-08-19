@@ -1,0 +1,45 @@
+.product {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    left: 70px;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .view-button {
+      display: none;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #007bff;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    &:hover {
+      .view-button {
+        display: block;
+      }
+      .icon{
+        color: #007bff;
+      }
+    }
+    .heart-icon {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      
+    }
+  }
+  
